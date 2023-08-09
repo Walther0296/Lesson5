@@ -1,7 +1,7 @@
 ﻿// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-Console.WriteLine("Задача №1");
+
 
 int Prompt(string message)
 {
@@ -11,6 +11,8 @@ int Prompt(string message)
     return result;
 }
 
+
+Console.WriteLine("Задача №1");
 // Задаем элементы массива
 int[] InputArray(int length)
 {
@@ -58,14 +60,6 @@ Console.WriteLine($" Количество четных чисел в масси�
 
 Console.WriteLine("Задача №2");
 
-int Prompt1(string message)
-{
-    System.Console.Write(message);
-    string value1 = Console.ReadLine();
-    int result1 = Convert.ToInt32(value1);
-    return result1;
-}
-
 // Задаем элементы массива
 int[] InputArray1(int length1)
 {
@@ -100,7 +94,7 @@ int Sumevans(int[] array1)
     return sum;
 }
 
-int length1 = Prompt1("Введите количество элементов в массиве > ");
+int length1 = Prompt("Введите количество элементов в массиве > ");
 int[] array1;
 array1 = InputArray1(length1);
 PrintArray1(array1);
